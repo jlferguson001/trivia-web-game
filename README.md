@@ -1,1 +1,1 @@
-# trivia-web-game
+# trivia-web-game created by Jenni Ferguson

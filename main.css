@@ -1,0 +1,75 @@
+ 
+ 
+ .container{
+     display: flex;
+     flex-flow: row wrap;
+     height: 100vh;
+     justify-content: space-between;
+     gap: .5em;
+     padding: .5em
+     
+ }
+
+ .villian {
+     background-color: pink;
+    flex-grow: 1;
+    width: 15%;
+    height: 30%;
+    border-style: outset;
+    border-width: 5px;
+    border-color: darkslategray;
+    
+  
+  }
+.questionBox {
+    background-color: pink;
+    flex-grow: 1;
+    width: 45%;
+    height: 30%;
+    border-style: outset;
+    border-width: 5px;
+    border-color: darkslategray;
+}
+  
+  .wrapper {
+    display: flex;
+     flex-flow: row wrap;
+     height: 100vh;
+     justify-content: space-between;
+     gap: 5px;
+     padding: 5px;
+     top:-20px
+     
+  }
+  
+  
+
+   .player1Box, .player2Box {
+    background-color: green;
+    width: 20%;
+    height: 40%;
+    border-style: outset;
+    border-width: 5px;
+    border-color: darkslategray;
+     
+  }
+  .answerBox {
+    background-color: green;
+    width: 55%;
+    height: 40%;
+    border-style: outset;
+    border-width: 5px;
+    border-color: darkslategray;
+  }
+  
+  @media (min-width:600px) {
+    .container{
+      flex-flow: row wrap;
+      align-items: stretch;
+    }
+  }
+  
+  
+   
+  
+  
