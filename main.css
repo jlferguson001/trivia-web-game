@@ -1,75 +1,40 @@
+  
  
- 
- .container{
-     display: flex;
-     flex-flow: row wrap;
-     height: 100vh;
-     justify-content: space-between;
-     gap: .5em;
-     padding: .5em
-     
+ .flexbox-container{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: darkslategray;
+
  }
 
- .villian {
-     background-color: pink;
-    flex-grow: 1;
-    width: 15%;
-    height: 30%;
-    border-style: outset;
-    border-width: 5px;
-    border-color: darkslategray;
-    
-  
-  }
-.questionBox {
-    background-color: pink;
-    flex-grow: 1;
-    width: 45%;
-    height: 30%;
-    border-style: outset;
-    border-width: 5px;
-    border-color: darkslategray;
-}
-  
-  .wrapper {
-    display: flex;
-     flex-flow: row wrap;
-     height: 100vh;
-     justify-content: space-between;
-     gap: 5px;
-     padding: 5px;
-     top:-20px
-     
-  }
-  
-  
-
-   .player1Box, .player2Box {
-    background-color: green;
-    width: 20%;
-    height: 40%;
-    border-style: outset;
-    border-width: 5px;
-    border-color: darkslategray;
-     
-  }
-  .answerBox {
-    background-color: green;
-    width: 55%;
-    height: 40%;
-    border-style: outset;
-    border-width: 5px;
-    border-color: darkslategray;
-  }
-  
-  @media (min-width:600px) {
-    .container{
-      flex-flow: row wrap;
-      align-items: stretch;
-    }
-  }
-  
-  
+ .flexbox-item {
    
-  
-  
+   margin: 5px;
+   border: 3px solid #333;
+   Background-color: #dfdfdf;
+ }
+
+ .flexbox-item-villian{
+   width: 30%;
+   height: 200px;
+
+ }
+
+ .flexbox-item-question{
+   width: 60%;
+   height: 200px;
+}
+.flexbox-item-player1Box{
+  width: 20%;
+  height: 200px;
+}
+
+.flexbox-item-answer{
+  width: 55%;
+  height: 200px;
+}
+
+.flexbox-item-player2Box{
+  width: 20%;
+  height: 200px;
+}

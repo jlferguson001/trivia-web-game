@@ -1,3 +1,6 @@
+
+
+
 var myQuestions = {
     {
         question:  "Which film ranked first in domestic box office for 2019 "
@@ -41,123 +44,64 @@ var myQuestions = {
         correctAnswer: 'b'
     },
     {
-        question:  ""
+        question:  "Which actor was the voice of Buzz Lightyear in Disney Pixar's Toy Story Franchise?"
         answers: {
-            a: ' ',
-            b: ' ',
-            c: ' ',
-            d: ' ',
+            a: 'Timmothy Hutton',
+            b: 'Tom Hardy',
+            c: 'Tim Allen',
+            d: 'Tom Hanks',
         },
-        correctAnswer: ''
+        correctAnswer: 'c'
     },
     {
-        question:  ""
+        question: "Which Actor did not star in 1994's Pulp Fiction"
         answers: {
-            a: ' ',
-            b: ' ',
-            c: ' ',
-            d: ' ',
+            a: 'Bruce Willis ',
+            b: 'Christopher Walken',
+            c: 'Harvey Keitel ',
+            d: 'Patricia Arquette',
         },
-        correctAnswer: ''
+        correctAnswer: 'd'
     },
     {
-        question:  ""
+        question:  "What did Hannibal Lecter eat with some fava beans and a nice Chianti?"
         answers: {
-            a: ' ',
-            b: ' ',
-            c: ' ',
-            d: ' ',
+            a: 'Brain ',
+            b: 'Lung ',
+            c: 'Liver ',
+            d: 'Kidney ',
         },
-        correctAnswer: ''
+        correctAnswer: 'c'
     },
     {
-        question:  ""
+        question:  "Which of the following did Tom Cruise NOT star in?"
         answers: {
-            a: ' ',
-            b: ' ',
-            c: ' ',
-            d: ' ',
+            a: 'Return of the Mummy ',
+            b: 'Legends ',
+            c: 'Mission Impossible ',
+            d: 'Rock of Ages ',
         },
-        correctAnswer: ''
+        correctAnswer: 'a'
     },
     {
-        question:  ""
+        question:  "In Top Gun, who was Maverick's Radar Intercept Officer and best friend?"
         answers: {
-            a: ' ',
-            b: ' ',
-            c: ' ',
-            d: ' ',
+            a: 'Viper',
+            b: 'Ice Man ',
+            c: 'Goose ',
+            d: 'Cougar',
         },
-        correctAnswer: ''
+        correctAnswer: 'c'
     },
     {
-        question:  ""
+        question:  "Which of the following actors did not play God on the big screen?"
         answers: {
-            a: ' ',
-            b: ' ',
-            c: ' ',
-            d: ' ',
+            a: 'Rob Zomie ',
+            b: 'Morgan Freeman ',
+            c: 'Alanis Morissette ',
+            d: 'John Travolta ',
         },
-        correctAnswer: ''
+        correctAnswer: 'd'
     },
-    {
-        question:  ""
-        answers: {
-            a: ' ',
-            b: ' ',
-            c: ' ',
-            d: ' ',
-        },
-        correctAnswer: ''
-    },
-    {
-        question:  ""
-        answers: {
-            a: ' ',
-            b: ' ',
-            c: ' ',
-            d: ' ',
-        },
-        correctAnswer: ''
-    },
-    {
-        question:  ""
-        answers: {
-            a: ' ',
-            b: ' ',
-            c: ' ',
-            d: ' ',
-        },
-        correctAnswer: ''
-    },
-    {
-        question:  ""
-        answers: {
-            a: ' ',
-            b: ' ',
-            c: ' ',
-            d: ' ',
-        },
-        correctAnswer: ''
-    },
-    {
-        question:  ""
-        answers: {
-            a: ' ',
-            b: ' ',
-            c: ' ',
-            d: ' ',
-        },
-        correctAnswer: ''
-    },
-    {
-        question:  ""
-        answers: {
-            a: ' ',
-            b: ' ',
-            c: ' ',
-            d: ' ',
-        },
-        correctAnswer: ''
-    },
+    
 }
