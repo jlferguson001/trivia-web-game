@@ -8,19 +8,34 @@
     <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-   <h1>Ferige's Triva Adventure</h1>
+    <h1>Fergie's Trivia Adventure</h1>
+  <!-- <img class="background-image" src = "krzyztopor-castle-1232338.jpg" alt="dungon"/> -->
+
     <div class="flexbox-container">
-        <div class = "flexbox-item flexbox-item-villian">villian</div>
+        <div class = "flexbox-item flexbox-item-villian"> 
+            <img class= villian src="./Assets/Character7_face1.png" alt="villian"/>
+        </div>
         <div class = "flexbox-item flexbox-item-question">question</div>
-        <div class = "flexbox-item flexbox-item-player1Box">player1</div>
+        <div class = "flexbox-item flexbox-item-player1Box"> 
+            <h2>Player One Score:<span id="scorePlayerOne">0</span></h2>
+            <img class= player1Icon src="./Assets/Icon17.png" alt="playerone"/>
+        </div>
+        
         <div class ="flexbox-item flexbox-item-answer">answer       
-                 
+                    <br>
                     <button class="btn">A</button>
+                    <br>
                     <button class="btn">B</button>
+                    <br>
                     <button class="btn">C</button>
-                    <button class="btn">D</button> 
+                    <br>
+                    <button class="btn">D</button>
+                    <br>
                 </div>
-        <div class = "flexbox-item flexbox-item-player2Box">player2</div>
+        <div class = "flexbox-item flexbox-item-player2Box"> 
+            <h2>Player Two Score:<span id="scorePlayerTwo">0</span></h2>
+            <img class= player2Icon src="./Assets/Icon43.png" alt="playertwo"/>
+        </div>
 
         
 
@@ -31,10 +46,8 @@
         
                 
     </div>
-    <div class="controls">
-        <button id="start-btn" class="start-btn btn"></button>
-        <button id="next-btn" class="next-btn btn"></button>
-       </div>
+ 
+     
     <script src = "./index.js"></script>  
 </body>
 </html>
