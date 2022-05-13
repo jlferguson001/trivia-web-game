@@ -1,74 +1,89 @@
-  body{
-    background: linear-gradient(to bottom right,#474973, navy);
-  }
+body{
+  background: linear-gradient(to bottom right,#474973, navy);
+}
 
-  h1{
-    text-align: center;
-    color:#a69cac;
-  }
- 
-  h2{
-    text-align: center;
-    margin-top: 0;
-    color: #48beff
-  }
+h1 {
+  font-size: 5em;
+  font-family: 'Cinzel Decorative', cursive;  
+  color: lightgray; 
+  text-align: center; 
+}
 
- .flexbox-container{
-    display: flex;
-    flex-wrap: wrap;
-    background-color: 161b33;
-     
+h2{
+ font-size: 1em;
+ font-family: 'Cinzel Decorative', cursive;  
+ color: lightgray; 
+ text-align: center;  
+}
 
- }
-
- .flexbox-item {
+.flexbox-container{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: 161b33;
+  height: 600px;
    
-   margin: 5px;
-   border: 3px solid #161B33;
-   Background-color: #dfdfdf;
- }
 
- .flexbox-item-villian{
-   width: 20%;
-   height: 200px;
+}
 
- }
+.flexbox-item {
+ 
+ margin: 5px;
+ border: 3px solid #161B33;
+ Background-color: rgb(87, 52, 19);
+ font-family: 'Cinzel Decorative', cursive;  
+ color: lightgray; 
 
- .villian {
-   height: 175px;
-   margin-left: 5em;
-   margin-top: 1em;
- }
+}
 
- .flexbox-item-question{
-   width: 77%;
-   height: 200px;
+.flexbox-item-villain{
+ width: 20%;
+ height: 300px;
+ margin-bottom:0;
+ padding-bottom: 0;
+ border-bottom: 0;
+
+}
+
+.villain {
+ height: 200px;
+ margin-left: 70px;
+ 
+ 
+}
+
+.potion {
+  height: 50px;
+}
+
+.flexbox-item-question{
+ width: 77%;
+ height: 300px;
 }
 .flexbox-item-player1Box{
-  width: 20%;
-  height: 200px;
+width: 20%;
+height: 300px;
 }
 
 .player1Icon, .player2Icon {
-  height: 150px;
-  margin-left: 3em;
-   
+height: 150px;
+margin-left: 3em;
+ 
 }
 
 .flexbox-item-answer{
-  width: 55%;
-  height: 200px;
+width: 55%;
+height: 300px;
 }
 
 .flexbox-item-player2Box{
-  width: 21%;
-  height: 200px;
+width: 21%;
+height: 300px;
 }
 
 .btn{
-  margin: 10px;
-  background-color: #A69cac;
-  color: white
+margin: 10px;
+background-color: #A69cac;
+color: white
 }
 
 

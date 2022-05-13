@@ -1,19 +1,19 @@
+document.body.style.backgroundImage = "url('./assets/krzyztopor-castle-1232338.jpg') ";
+ 
 
-
-
-var myQuestions = {
+var myQuestions = [
     {
-        question:  "Which film ranked first in domestic box office for 2019 "
+        question:  "Which film ranked first in domestic box office for 2019 ",
         answers: {
             a: 'Captain Marvel',
             b: 'Star WArs: Episode IX - The Rise of Skywalker',
             c: 'Toy Story 4',
             d: 'Avengers: Endgame',
         },
-        correctAnswer: 'd'
+        correctAnswer: 'd',
     },
     {
-        question: "Which Actress played Danielle De Barbarac in the film Ever After"
+        question: "Which Actress played Danielle De Barbarac in the film Ever After",
         answers: {
             a:  'Maggie Gyllenhall',
             b:  'Drew Barrymore',
@@ -24,7 +24,7 @@ var myQuestions = {
     },
 
     {
-        question:  "What actor played the Joker in 2019"
+        question:  "What actor played the Joker in 2019",
         answers: {
             a: 'Heath Ledger ',
             b: 'Joaquin Phoenix ',
@@ -34,17 +34,17 @@ var myQuestions = {
         correctAnswer: 'b'
     },
     {
-        question:  "What sequel made over 200,000,000 in 2019"
+        question:  "What sequel made over 200,000,000 in 2019",
         answers: {
             a: 'Jumanji: The Next Level ',
             b: 'It Chapeter Two ',
             c: 'The Secret Life of Pets 2 ',
             d: 'Zombieland: Double Tap ',
         },
-        correctAnswer: 'b'
+        correctAnswer: 'b',
     },
     {
-        question:  "Which actor was the voice of Buzz Lightyear in Disney Pixar's Toy Story Franchise?"
+        question:  "Which actor was the voice of Buzz Lightyear in Disney Pixar's Toy Story Franchise?",
         answers: {
             a: 'Timmothy Hutton',
             b: 'Tom Hardy',
@@ -54,17 +54,17 @@ var myQuestions = {
         correctAnswer: 'c'
     },
     {
-        question: "Which Actor did not star in 1994's Pulp Fiction"
+        question: "Which Actor did not star in 1994's Pulp Fiction",
         answers: {
             a: 'Bruce Willis ',
             b: 'Christopher Walken',
             c: 'Harvey Keitel ',
             d: 'Patricia Arquette',
         },
-        correctAnswer: 'd'
+        correctAnswer: 'd',
     },
     {
-        question:  "What did Hannibal Lecter eat with some fava beans and a nice Chianti?"
+        question:  "What did Hannibal Lecter eat with some fava beans and a nice Chianti?",
         answers: {
             a: 'Brain ',
             b: 'Lung ',
@@ -74,18 +74,17 @@ var myQuestions = {
         correctAnswer: 'c'
     },
     {
-        question:  "Which of the following did Tom Cruise NOT star in?"
+        question:  "Which of the following did Tom Cruise NOT star in?",
         answers: {
             a: 'Return of the Mummy ',
             b: 'Legends ',
             c: 'Mission Impossible ',
             d: 'Rock of Ages ',
         },
-        correctAnswer: 'a'
+        correctAnswer: 'a',
     },
     {
-        question:  "In Top Gun, who was Maverick's Radar Intercept Officer and best friend?"
-        answers: {
+        question:  "In Top Gun, who was Maverick's Radar Intercept Officer and best friend?",        answers: {
             a: 'Viper',
             b: 'Ice Man ',
             c: 'Goose ',
@@ -94,14 +93,14 @@ var myQuestions = {
         correctAnswer: 'c'
     },
     {
-        question:  "Which of the following actors did not play God on the big screen?"
+        question:  "Which of the following actors did not play God on the big screen?",
         answers: {
             a: 'Rob Zomie ',
             b: 'Morgan Freeman ',
             c: 'Alanis Morissette ',
             d: 'John Travolta ',
         },
-        correctAnswer: 'd'
+        correctAnswer: 'd',
     },
     
-}
+]
