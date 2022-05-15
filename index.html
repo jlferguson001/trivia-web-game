@@ -12,53 +12,55 @@
 </head>
 <body>
     <h1>Fergie's Trivia Adventure</h1> 
-
+<!-- imbeded image to button reference: https://stackoverflow.com/questions/8683528/embed-image-in-a-button-element -->
     <div class="flexbox-container">
         <div id = "flexbox-villainContainer">  
-            <!-- <div id = 'potion'>
-                <img id = "potion potion-villain0" src = './Assets/potions (3).png' alt="villain life potion"/>
-                <img id = "potion potion-villain1" src = './Assets/potions (3).png' alt="villain life potion"/>
-                <img id = "potion potion-villain2" src = './Assets/potions (3).png' alt="villain life potion"/>
-                <img id = "potion potion-villain3" src = './Assets/potions (3).png' alt="villain life potion"/>
-                <img id = "potion potion-villain4" src = './Assets/potions (3).png' alt="villain life potion"/>
-            </div> -->
+            <div id="villian-potion-buttons" class= "btn-grid1">
+                <button class="btn1"><img src = './Assets/potions (3).png' alt="villain life potion"/></button>
+                <button class="btn1"><img src = './Assets/potions (3).png' alt="villain life potion"/></button>
+                <button class="btn1"><img src = './Assets/potions (3).png' alt="villain life potion"/></button>
+                <button class="btn1"><img src = './Assets/potions (3).png' alt="villain life potion"/></button>
+               
+            </div>
             <hr>
             <img class="villain" src="./Assets/13.png" alt="villain"/>
             <h2>Villain<span id='villain'></span></h2>
         </div>
 
-        
+        <div class = "quiz-container">
+            <div id="question-container" class="hide">
+                <div id="question">Question</div>
+                <div id="answer-buttons" class="btn-grid">
+                    <button class="btnQ">Option 1</button>
+                    <button class="btnQ">Option 2</button>
+                    <button class="btnQ">Option 3</button>
+                    <button class="btnQ">Option 4</button>
+                </div>
+                
+            </div> 
+            <div class="controls">
+                <button id="start-btn" class="start-btn btn">Start</button>
+                <button id="next-btn" class= "next-btn btn hide">Next</button>
+            </div>                                        
+        </div>                   
+
+<!-- imbeded image to button reference: https://stackoverflow.com/questions/8683528/embed-image-in-a-button-element -->
                 
         <div id = "flexbox-playerContainer"> 
-            <!-- <div class= 'potion'>
-                <img id = "potion" src = './Assets/potions (1).png' alt = "playerOne life potion"/>
-                <img id = "potion " src = './Assets/potions (1).png' alt = "playerOne life potion"/>
-                <img id = "potion " src = './Assets/potions (1).png' alt = "playerOne life potion"/>
-                <img id = "potion " src = './Assets/potions (1).png' alt = "playerOne life potion"/>
-                <img id = "potion " src = './Assets/potions (1).png' alt = "playerOne life potion"/>
+            <div id="player-potion-buttons" class = 'btn-grid2'>
+                <button class= "btn2"><img src = './Assets/potions (1).png' alt = "playerOne life potion"/></button>
+                <button class= "btn2"><img src = './Assets/potions (1).png' alt = "playerOne life potion"/></button>
+                <button class= "btn2"><img src = './Assets/potions (1).png' alt = "playerOne life potion"/></button>
+                <button class= "btn2"><img src = './Assets/potions (1).png' alt = "playerOne life potion"/></button>
+                
             </div>
             <hr>
-            <img class= playerIcon src="./Assets/6.png" alt="player"/> -->
+            <img class= player src="./Assets/6.png" alt="player"/>
             <h2>Player<span id="player"></span></h2>
         </div>
         
     </div>
-    <div class = "container">
-        <div id="question-container" class="hide">
-            <div id="question">Question</div>
-            <div id="answer-buttons" class="btn-grid">
-                <button class="btn">Option 1</button>
-                <button class="btn">Option 2</button>
-                <button class="btn">Option 3</button>
-                <button class="btn">Option 4</button>
-            </div>
-            
-        </div> 
-        <div class="controls">
-            <button id="start-btn" class="start-btn btn">Start</button>
-            <button id="next-btn" class= "next-btn btn hide">Next</button>
-        </div>                                        
-    </div>                   
+    
      
     <script src = "./index.js"></script>  
 </body>
