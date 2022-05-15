@@ -14,61 +14,51 @@
     <h1>Fergie's Trivia Adventure</h1> 
 
     <div class="flexbox-container">
-        <div class = "flexbox-item flexbox-item-villain"> 
-            
-            <img class = "potion potion-villain" src = './Assets/potions (3).png' alt="villain life potion"/>
-            <img class = "potion potion-villain" src = './Assets/potions (3).png' alt="villain life potion"/>
-            <img class = "potion potion-villain" src = './Assets/potions (3).png' alt="villain life potion"/>
-            <img class = "potion potion-villain" src = './Assets/potions (3).png' alt="villain life potion"/>
-            <img class = "potion potion-villain" src = './Assets/potions (3).png' alt="villain life potion"/>
+        <div id = "flexbox-villainContainer">  
+            <!-- <div id = 'potion'>
+                <img id = "potion potion-villain0" src = './Assets/potions (3).png' alt="villain life potion"/>
+                <img id = "potion potion-villain1" src = './Assets/potions (3).png' alt="villain life potion"/>
+                <img id = "potion potion-villain2" src = './Assets/potions (3).png' alt="villain life potion"/>
+                <img id = "potion potion-villain3" src = './Assets/potions (3).png' alt="villain life potion"/>
+                <img id = "potion potion-villain4" src = './Assets/potions (3).png' alt="villain life potion"/>
+            </div> -->
             <hr>
             <img class="villain" src="./Assets/13.png" alt="villain"/>
-        </div>
-        <div class = "flexbox-item flexbox-item-question">question</div>
-        
-        <div class = "flexbox-item flexbox-item-player1Box"> 
-            <img class = "potion potion-playerOne" src = './Assets/potions (1).png' alt = "playerOne life potion"/>
-            <img class = "potion potion-playerOne" src = './Assets/potions (1).png' alt = "playerOne life potion"/>
-            <img class = "potion potion-playerOne" src = './Assets/potions (1).png' alt = "playerOne life potion"/>
-            <img class = "potion potion-playerOne" src = './Assets/potions (1).png' alt = "playerOne life potion"/>
-            <img class = "potion potion-playerOne" src = './Assets/potions (1).png' alt = "playerOne life potion"/>
-            <hr>
-            <img class= player1Icon src="./Assets/6.png" alt="playerone"/>
-            <h2>Player One<span id="playerOne"></span></h2>
-        </div>
-        
-        <div class ="flexbox-item flexbox-item-answer">answer       
-                    <br>
-                    <button class="btn">A</button>
-                    <br>
-                    <button class="btn">B</button>
-                    <br>
-                    <button class="btn">C</button>
-                    <br>
-                    <button class="btn">D</button>
-                    <br>
-                </div>
-        <div class = "flexbox-item flexbox-item-player2Box"> 
-            <img class = "potion potion-playerTwo" src = './Assets/potions (2).png' alt = "playerTwo life potion"/>
-            <img class = "potion potion-playerTwo" src = './Assets/potions (2).png' alt = "playerTwo life potion"/>
-            <img class = "potion potion-playerTwo" src = './Assets/potions (2).png' alt = "playerTwo life potion"/>
-            <img class = "potion potion-playerTwo" src = './Assets/potions (2).png' alt = "playerTwo life potion"/>
-            <img class = "potion potion-playerTwo" src = './Assets/potions (2).png' alt = "playerTwo life potion"/>
-            <hr>
-            <img class= player2Icon src="./Assets/10.png" alt="playertwo"/>
-            <h2>Player Two<span id="playerTwo"></span></h2>
+            <h2>Villain<span id='villain'></span></h2>
         </div>
 
-        
-
-         
-             
-            
-            
         
                 
+        <div id = "flexbox-playerContainer"> 
+            <!-- <div class= 'potion'>
+                <img id = "potion" src = './Assets/potions (1).png' alt = "playerOne life potion"/>
+                <img id = "potion " src = './Assets/potions (1).png' alt = "playerOne life potion"/>
+                <img id = "potion " src = './Assets/potions (1).png' alt = "playerOne life potion"/>
+                <img id = "potion " src = './Assets/potions (1).png' alt = "playerOne life potion"/>
+                <img id = "potion " src = './Assets/potions (1).png' alt = "playerOne life potion"/>
+            </div>
+            <hr>
+            <img class= playerIcon src="./Assets/6.png" alt="player"/> -->
+            <h2>Player<span id="player"></span></h2>
+        </div>
+        
     </div>
- 
+    <div class = "container">
+        <div id="question-container" class="hide">
+            <div id="question">Question</div>
+            <div id="answer-buttons" class="btn-grid">
+                <button class="btn">Option 1</button>
+                <button class="btn">Option 2</button>
+                <button class="btn">Option 3</button>
+                <button class="btn">Option 4</button>
+            </div>
+            
+        </div> 
+        <div class="controls">
+            <button id="start-btn" class="start-btn btn">Start</button>
+            <button id="next-btn" class= "next-btn btn hide">Next</button>
+        </div>                                        
+    </div>                   
      
     <script src = "./index.js"></script>  
 </body>
