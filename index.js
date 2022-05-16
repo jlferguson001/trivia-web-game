@@ -1,3 +1,18 @@
+let  correctAnswers =0;
+let  wrongAnswers=0;
+
+
+//   getelementbyclass ( btn1) create  array index added to one)() to show [0] btn1++
+//get elementby class (bt2) use the variable.
+
+
+
+// const btn2 = document.querySelectorAll(".btn2")
+// btn2.forEach((btn, idx) => {
+//     console.log(btn, idx)
+// })
+//  console.log('btn2')
+
 document.body.style.backgroundImage = "url('./assets/krzyztopor-castle-1232338.jpg') ";
 
 const startButton = document.getElementById('start-btn')
@@ -5,7 +20,22 @@ const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
 
 const questionElement = document.getElementById('question')
+ 
 const answerButtonsElement = document.getElementById('answer-buttons')
+
+// const playerPotion = document.getElementById('btn-grid2').children[0];
+// const newPotion = document.create
+// const villianPotion = document.getElementById('btn-grid1').children[0];
+// 
+// function changeImage() {
+// //     let image = document.getElementById('btn2')
+//     if(answer.correct){
+//         image.src = "./assets/potions(4).png"
+//     }else{
+//         image.src = "./assets/potions(3).png"
+//     }
+// }
+
 
 let shuffledQuestions, currentQuestionIndex
 
@@ -13,6 +43,7 @@ startButton.addEventListener('click', startGame)
 nextButton.addEventListener('click', () => {
     currentQuestionIndex++
     setNextQuestion()
+    updatePotion(answer)
 })
 
 // Start game
@@ -25,6 +56,12 @@ function startGame(){
     setNextQuestion()
     
 }
+// add functions for selecting correct answer
+//add function for selecting incorrect answer
+//onclick, add the lines that we created below for the correctAnswers and wrongAnswers
+
+//this will assist in event handler to end the game.
+
 //next question
 
 function setNextQuestion(){
@@ -39,12 +76,27 @@ function showQuestion(question){
         button.classList.add('btn')
         if(answer.correct){
             button.dataset.correct = answer.correct
+            
+
         }
         button.addEventListener('click', selectAnswer)
         answerButtonsElement.appendChild(button)
     })
 }
 
+function updatePotion(answer)  {
+ 
+  
+
+  if(answer.correct){
+   
+        }else{
+            
+           
+        }
+
+    }
+    
 
 //select answer
 function resetState(){
@@ -73,10 +125,18 @@ function selectAnswer(e) {
 
     function setStatusClass(element, correct) {
         clearStatusClass(element)
+        console.log(wrongAnswers)
+        
         if (correct) {
             element.classList.add('correct')
+            let btn1= document.getElementsByClassName("btn1")[correctAnswers]
+            btn1.innerHTML = "<img src = \'./assets/potions (7).png'>";
+            correctAnswers++
         }else {
             element.classList.add('wrong')
+            let btn2= document.getElementsByClassName("btn2")[wrongAnswers]
+            btn2.innerHTML = "<img src = \'./assets/potions (7).png'>";
+            wrongAnswers++
         }
     }
 }
@@ -85,6 +145,14 @@ function clearStatusClass(element) {
     element.classList.remove('correct')
     element.classList.remove('wrong')
 }
+
+//end game declare winner or loser and count score
+
+
+function stopGame(){
+console.log('stop game');
+}
+
 const questions = [
     {
         question: "Which film ranked first in domestic box office for 2019?",

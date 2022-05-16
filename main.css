@@ -49,17 +49,21 @@ h2{
 .btnQ {
   border-radius: 5px;
   padding: 5px 10px;
-  color: black;,
+  color: black;
   background-color: grey;
   outline:auto;
 }
 
-.btn.correct {
+button:hover {
+  color: green;
+  font-weight: bold;
+}
+.correct {
   background-color: green;
   color: silver;
 }
 
-.btn.wrong{
+.wrong{
   background-color:black ;
   color: white;
 }
