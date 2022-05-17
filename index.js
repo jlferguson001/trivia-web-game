@@ -1,51 +1,17 @@
-let  correctAnswers =0;
-let  wrongAnswers=0;
-
-
-//   getelementbyclass ( btn1) create  array index added to one)() to show [0] btn1++
-//get elementby class (bt2) use the variable.
-
-
-
-// const btn2 = document.querySelectorAll(".btn2")
-// btn2.forEach((btn, idx) => {
-//     console.log(btn, idx)
-// })
-//  console.log('btn2')
-
 document.body.style.backgroundImage = "url('./assets/krzyztopor-castle-1232338.jpg') ";
 
 const startButton = document.getElementById('start-btn')
 const nextButton = document.getElementById('next-btn')
 const questionContainerElement = document.getElementById('question-container')
-
 const questionElement = document.getElementById('question')
- 
 const answerButtonsElement = document.getElementById('answer-buttons')
-
-// const playerPotion = document.getElementById('btn-grid2').children[0];
-// const newPotion = document.create
-// const villianPotion = document.getElementById('btn-grid1').children[0];
-// 
-// function changeImage() {
-// //     let image = document.getElementById('btn2')
-//     if(answer.correct){
-//         image.src = "./assets/potions(4).png"
-//     }else{
-//         image.src = "./assets/potions(3).png"
-//     }
-// }
-
-
 let shuffledQuestions, currentQuestionIndex
-
 startButton.addEventListener('click', startGame)
 nextButton.addEventListener('click', () => {
     currentQuestionIndex++
     setNextQuestion()
-    updatePotion(answer)
+    correctAnswer()
 })
-
 // Start game
 function startGame(){
     console.log('started')
@@ -56,14 +22,7 @@ function startGame(){
     setNextQuestion()
     
 }
-// add functions for selecting correct answer
-//add function for selecting incorrect answer
-//onclick, add the lines that we created below for the correctAnswers and wrongAnswers
-
-//this will assist in event handler to end the game.
-
 //next question
-
 function setNextQuestion(){
     resetState()
     showQuestion(shuffledQuestions[currentQuestionIndex])
@@ -76,28 +35,11 @@ function showQuestion(question){
         button.classList.add('btn')
         if(answer.correct){
             button.dataset.correct = answer.correct
-            
-
         }
         button.addEventListener('click', selectAnswer)
         answerButtonsElement.appendChild(button)
     })
 }
-
-function updatePotion(answer)  {
- 
-  
-
-  if(answer.correct){
-   
-        }else{
-            
-           
-        }
-
-    }
-    
-
 //select answer
 function resetState(){
     clearStatusClass(document.body)
@@ -120,37 +62,37 @@ function selectAnswer(e) {
         startButton.innerText = 'restart'
         startButton.classList.remove('hide')
     }
-
     nextButton.classList.remove('hide')
-
     function setStatusClass(element, correct) {
         clearStatusClass(element)
-        console.log(wrongAnswers)
-        
         if (correct) {
             element.classList.add('correct')
-            let btn1= document.getElementsByClassName("btn1")[correctAnswers]
-            btn1.innerHTML = "<img src = \'./assets/potions (7).png'>";
-            correctAnswers++
         }else {
             element.classList.add('wrong')
-            let btn2= document.getElementsByClassName("btn2")[wrongAnswers]
-            btn2.innerHTML = "<img src = \'./assets/potions (7).png'>";
-            wrongAnswers++
         }
     }
 }
+let correctAnswers = 0
+let wrongAnswers=0
+
+function correctAnswer(correct){
+if (correct) {
+        element.classList.add('correct')
+        let btn1= document.getElementsByClassName("btn1")[correctAnswers]
+        btn1.innerHTML = "<img src = \'./assets/potions (7).png'>";
+        correctAnswers++
+    }else {
+        element.classList.add('wrong')
+        let btn2= document.getElementsByClassName("btn2")[wrongAnswers]
+        btn2.innerHTML = "<img src = \'./assets/potions (7).png'>";
+        wrongAnswers++
+    }
+}
+console.log(correctAnswers)
 
 function clearStatusClass(element) {
     element.classList.remove('correct')
     element.classList.remove('wrong')
-}
-
-//end game declare winner or loser and count score
-
-
-function stopGame(){
-console.log('stop game');
 }
 
 const questions = [
@@ -183,7 +125,6 @@ const questions = [
             {text: 'Jack Nicholson', correct: false},
          ]
     }, 
-
     {
         question: "What sequel made over 200,000,000 in 2019?", 
         answers: [
@@ -193,7 +134,6 @@ const questions = [
             {text: 'Zombieland: Double Tap', correct: false},
         ]
     },
-
     {
         question: "Which actor was the voice of Buzz Lightyear in Disney Pixar's Toy Story Franchise?",
         answers: [
@@ -203,7 +143,6 @@ const questions = [
             {text: 'Tom Hanks', correct: false},
         ]
     },
-
     {
         question:"Which Actor did not star in 1994's Pulp Fiction?",
         answers: [
@@ -213,7 +152,6 @@ const questions = [
             {text: 'Patricia Arquette', correct: true},
         ]
     },
-
     {
         question:"What did Hannibal Lecter eat with some fava beans and a nice Chianti?",
         answers: [
@@ -223,7 +161,6 @@ const questions = [
             {text: 'Liver ', correct: true},
         ]
     },
-
     {
         question: "Which of the following did Tom Cruise NOT star in?",
         answers: [
@@ -233,7 +170,6 @@ const questions = [
             {text: 'Rock of Ages', correct: false},
         ]
     },
-
     {
         question: "In Top Gun, who was Maverick's Radar Intercept Officer and best friend?",
         answers: [
@@ -243,7 +179,6 @@ const questions = [
             {text: 'Cougar', correct: false},
         ]
     },
-
     {
         question:"Which of the following actors did not play God on the big screen?", 
         answers :[
@@ -255,3 +190,7 @@ const questions = [
     },
         
 ]
+const questionCheck = document.querySelectorAll('questions')
+questions.forEach((questions, idx) => {
+    console.log(questions, idx)
+})
