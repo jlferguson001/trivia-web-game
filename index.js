@@ -26,7 +26,16 @@ function startGame(){
 function setNextQuestion(){
     resetState()
     showQuestion(shuffledQuestions[currentQuestionIndex])
+
+    if( correctAnswers >= 4) 
+      alert( "You Slayed the Villain")
+ 
+    if( wrongAnswers >=4 )
+      alert( "You Died")
 }
+
+//this will show the question and the answers for the user to select from
+
 function showQuestion(question){
     questionElement.innerText = question.question
     question.answers.forEach(answer => {
@@ -48,10 +57,26 @@ function resetState(){
         answerButtonsElement.removeChild(answerButtonsElement.firstChild)
     }
 }
- 
+
+//This will allow for tracking of the correct and wrong answers
+//https://www.w3schools.com/jsref/event_target.asp
+
 function selectAnswer(e) {
     const selectedButton =e.target
     const correct = selectedButton.dataset.correct
+
+    if (correct )
+    {
+        correctAnswers++;
+        alert( "Correct answers: " + correctAnswers );
+    }
+    else
+    {
+            wrongAnswers++;
+            alert( "Wrong answers: " + wrongAnswers );
+    }
+
+
     setStatusClass(document.body, correct)
     Array.from(answerButtonsElement.children).forEach(button => {
         setStatusClass(button, button.dataset.correct)
@@ -63,14 +88,21 @@ function selectAnswer(e) {
         startButton.classList.remove('hide')
     }
     nextButton.classList.remove('hide')
+
     function setStatusClass(element, correct) {
         clearStatusClass(element)
         if (correct) {
             element.classList.add('correct')
         }else {
+  
             element.classList.add('wrong')
         }
     }
+
+    // auto advance
+    currentQuestionIndex++
+    setNextQuestion()
+    correctAnswer();
 }
 let correctAnswers = 0
 let wrongAnswers=0
@@ -190,7 +222,3 @@ const questions = [
     },
         
 ]
-const questionCheck = document.querySelectorAll('questions')
-questions.forEach((questions, idx) => {
-    console.log(questions, idx)
-})

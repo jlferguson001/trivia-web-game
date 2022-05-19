@@ -58,7 +58,7 @@ button:hover {
   color: green;
   font-weight: bold;
 }
-.correct {
+/* .correct {
   background-color: green;
   color: silver;
 }
@@ -66,8 +66,8 @@ button:hover {
 .wrong{
   background-color:black ;
   color: white;
-}
-.start-btn, .next-btn{
+} */
+.start-btn  {
   color: black;
   font-weight: bold;
   padding: 10px 20px;
@@ -94,6 +94,3 @@ button:hover {
   
 }
 
-.btn1 img, .btn2 img{
-  height: 25px;
-}
