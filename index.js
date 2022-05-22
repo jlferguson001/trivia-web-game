@@ -1,4 +1,4 @@
-document.body.style.backgroundImage = "url('./assets/krzyztopor-castle-1232338.jpg') ";
+// document.body.style.backgroundImage = "url('./assets/krzyztopor-castle-1232338.jpg') ";
 
 
 const questionContainer = document.getElementById('question-container')
