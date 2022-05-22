@@ -34,10 +34,10 @@ h2{
   display: grid;
   grid-template-columns: 4;
   gap: 10px;
-  /* margin: 20px 0; */
+  
  
 }
-.btn-grid1, .btn-grid2{
+.btn-grid1 {
   display: grid;
    
 }
@@ -46,10 +46,10 @@ h2{
   background-color: rgb(87, 52, 19);
 }
 
-.btnQ {
+.btn {
   border-radius: 5px;
   padding: 5px 10px;
-  color: black;
+  color: lightgrey;
   background-color: grey;
   outline:auto;
 }
@@ -58,15 +58,7 @@ button:hover {
   color: green;
   font-weight: bold;
 }
-/* .correct {
-  background-color: green;
-  color: silver;
-}
 
-.wrong{
-  background-color:black ;
-  color: white;
-} */
 .start-btn  {
   color: black;
   font-weight: bold;
@@ -94,3 +86,6 @@ button:hover {
   
 }
 
+.btn1 img, .btn2 img{
+  height: 25px;
+}

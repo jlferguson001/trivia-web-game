@@ -11,35 +11,53 @@
 <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Fergie's Trivia Adventure</h1> 
-
-    <div class="flexbox-container">
-        <div id = "flexbox-villainContainer">  
+    <h1>Fergie's Trivia Adventure</h1>  
+<!-- imbeded image to button reference: https://stackoverflow.com/questions/8683528/embed-image-in-a-button-element -->
+    <div class="flexbox-container">  
+        <div id = "flexbox-villainContainer">   
+            <div id="villian-potion-buttons" class= "btn-grid1">
+                <button class="btn1"><img src = './Assets/potions (3).jpg' alt="villain life potion"/></button>
+                <button class="btn1"><img src = './Assets/potions (3).jpg' alt="villain life potion"/></button>
+                <button class="btn1"><img src = './Assets/potions (3).jpg' alt="villain life potion"/></button>
+                <button class="btn1"><img src = './Assets/potions (3).jpg' alt="villain life potion"/></button>
+                <button class="btn1"><img src = './Assets/potions (3).jpg' alt="villain life potion"/></button>
+            </div>
+           
             <img class="villain" src="./Assets/13.png" alt="villain"/>
             <h2>Villain<span id='villain'></span></h2>
         </div>
 
         <div class = "quiz-container">
             <div id="question-container" class="hide">
+                
                 <div id="question">Question</div>
-                <div id="answer-buttons" class="btn-grid">
-                    <button class="btnQ">Option 1</button>
-                    <button class="btnQ">Option 2</button>
-                    <button class="btnQ">Option 3</button>
-                    <button class="btnQ">Option 4</button>
+
+                <div id="answer" class="btn-grid">
+                    <button class="btn">Option 1</button>
+                    <button class="btn">Option 2</button>
+                    <button class="btn">Option 3</button>
+                    <button class="btn">Option 4</button>
                 </div>
                 
             </div> 
+
             <div class="controls">
-                <button id="start-btn" class="start-btn btn">Start</button>
-                <button id="next-btn" class= "next-btn btn hide">Next</button>
+                <button id="start-btn" class="start-btn btn">Start</button> 
             </div>                                        
         </div>                   
 
-
+<!-- imbeded image to button reference: https://stackoverflow.com/questions/8683528/embed-image-in-a-button-element -->
                 
         <div id = "flexbox-playerContainer"> 
-              <img class= player src="./Assets/6.png" alt="player"/>
+            <div id="player-potion-buttons" class = 'btn-grid1'>
+                <button class= "btn2"><img src = './Assets/potions (4).jpg' alt = "playerOne life potion"/></button>
+                <button class= "btn2"><img src = './Assets/potions (4).jpg' alt = "playerOne life potion"/></button>
+                <button class= "btn2"><img src = './Assets/potions (4).jpg' alt = "playerOne life potion"/></button>
+                <button class= "btn2"><img src = './Assets/potions (4).jpg' alt = "playerOne life potion"/></button>
+                <button class= "btn2"><img src = './Assets/potions (4).jpg' alt = "playerOne life potion"/></button>
+            </div>
+            
+            <img class= player src="./Assets/6.png" alt="player"/>
             <h2>Player<span id="player"></span></h2>
         </div>
         
