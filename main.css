@@ -33,6 +33,14 @@ h2{
   box-shadow: 0 0 10px 2px;
 }
 
+#question{
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+#answer.btn-grid{
+  margin-top: 20px;
+}
 .btn-grid{
   display: grid;
   grid-template-columns: 4;
